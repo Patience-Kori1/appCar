@@ -1,11 +1,13 @@
 import React from "react";
 
-const Car = () => {
+const Car = ({children, color}) => {
+    // console.log(props.children);
     return (
-        <div>
-            <p> Marque: </p>
-            <p> Couleur: </p>
+        <div style = {{backgroundColor: 'pink', width: '400px', margin:'5px auto', padding:'10px'}}>
+            <p> Marque : {children} </p>
+            <p> Couleur : {color} </p>
         </div>
+      
     )
 }
 
