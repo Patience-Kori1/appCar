@@ -1,7 +1,9 @@
 import { Component } from 'react';
 import Mycars from './components/Mycars';
 import './App.css';
-import { getRoles } from '@testing-library/react';
+import Images from './components/Images';
+import Form from './components/Form';
+
 
 class App extends Component {
 
@@ -15,7 +17,11 @@ class App extends Component {
       <div className='App'style = {{backgroundColor: ' rgb(248, 225, 186)', width: '800px', margin:'5px auto', padding:'10px', marginTop: '50px'}}>
 
         <h1> Composant 1  : App.js </h1>
+        <Form head={true}></Form>
+        <Images></Images>
         <Mycars title={this.state.titre} />
+        
+        
 
       </div>
     )
