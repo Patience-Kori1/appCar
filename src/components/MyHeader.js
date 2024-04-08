@@ -1,6 +1,10 @@
 import React from 'react';
 
-const MyHeader = ({children, myStyle}) =>
-<h1 style= {{ color: myStyle}}> { children } </h1>;
+const MyHeader = ({myStyle, children}) =>
+<div>
+<h4> Composant : My header </h4>
+<h1 style = {{ color: myStyle}}> { children } </h1>
+
+</div>
 
 export default MyHeader
