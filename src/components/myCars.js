@@ -2,7 +2,6 @@ import { Component } from 'react'
 import Car from './Cars'
 
 class Mycars extends Component {
-
     state  = {
         voitures: [ 
             { marque:"Ford", year: "2000", color:"red"},
